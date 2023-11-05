@@ -1,0 +1,63 @@
+.header {
+  height: 74px;
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.header__logo {
+  height: 38px;
+  width: 38px;
+
+  background-image: url("../../images/logo.svg");
+
+  position: absolute;
+  left: 70px;
+}
+
+.header__navigation {
+  margin: auto;
+}
+
+.header__navigation-link {
+  margin: 0 16px 0 0;
+  color: #FFF;
+
+  text-align: right;
+  font-family: Inter;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+}
+
+.header__navigation-link:last-of-type {
+  margin: 0;
+}
+
+.header__account-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 32px;
+  width: 100px;
+
+  border-radius: 20px;
+  background: #313131;
+
+  position: absolute;
+  right: 70px;
+
+  color: #FFF;
+
+  text-decoration: none;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
