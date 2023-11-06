@@ -1,0 +1,83 @@
+.about-project {
+  margin: 110px 70px 0;
+}
+
+.about-project__header {
+  margin: auto 0 70px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #DADADA;
+  color: #FFF;
+
+  font-family: Inter;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.88px;
+}
+
+.about-project__description {
+  margin: 0 0 110px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  column-gap: 40px;
+  row-gap: 26px;
+}
+
+.about-project__subtitle {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.8px;
+}
+
+.about-project__text {
+  color: #FFF;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.about-project__timeline {
+  display: grid;
+  grid-template-columns: 1fr 4fr; 
+}
+
+.about-project__weeks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 36px;
+  background: #3DDC84;
+  color: #000;
+
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.about-project__weeks:last-of-type {
+  background: #303030;
+  color: #FFF;
+}
+
+.about-project__span {
+  margin: 14px auto 110px;
+
+  color: #8B8B8B;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 17px;
+}
