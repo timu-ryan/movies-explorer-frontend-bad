@@ -7,7 +7,7 @@ import logoPath from '../../images/logo.svg';
 // import Navigation from '../Navigation/Navigation';
 
 const Header = ({ handleNavigationClick }) => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(true);
 
   return (
     <div className='header'>
@@ -15,10 +15,10 @@ const Header = ({ handleNavigationClick }) => {
         <img alt='логотип' src={logoPath} />
       </NavLink>
 
-      <button 
+      {/* <button 
         style={{position: 'absolute'}}
         onClick={() => setIsLoggedIn(!isLoggedIn)}  
-      >sth</button>
+      >sth</button> */}
 
       {isLoggedIn && (
         <div className='header__navigation'>
@@ -38,10 +38,15 @@ const Header = ({ handleNavigationClick }) => {
         )
       }
 
-      <button 
-        onClick={handleNavigationClick}
-        className='header__navigation-button'
-      ></button>
+      {
+        isLoggedIn && (
+          <button 
+            onClick={handleNavigationClick}
+            className='header__navigation-button'
+          ></button>
+        )
+      }
+      
 
     </div>
   )

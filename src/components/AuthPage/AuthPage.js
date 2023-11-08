@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import logoPath from '../../images/logo.svg';
 import './AuthPage.css';
 
-const AuthPage = ({texts, children}) => {
+const AuthPage = ({texts, children, handleSubmitClick, errorClass}) => {
   const {
     greeting,
     buttonText,
@@ -11,6 +11,7 @@ const AuthPage = ({texts, children}) => {
     linkText,
     linkTo
   } = texts;
+  
   return (
     <div className='auth-page'>
       <NavLink to="/" className='auth-page__logo'>
@@ -20,16 +21,17 @@ const AuthPage = ({texts, children}) => {
       <h2 className='auth-page__title'>{greeting}</h2>
       <form 
       action="" 
-      // onSubmit={handleSubmit} 
+      onSubmit={handleSubmitClick} 
       name="search-form" 
       noValidate 
       className="auth-page__form"
     >
-        {/* <AuthInput name='name' title='Имя' type='text' />
-        <AuthInput name='email' title='E-mail' type='email' />
-        <AuthInput name='password' title='Пароль' type='password' /> */}
         {children}
-        <button type="submit" className="auth-page__button">{buttonText}</button>
+        <span className={errorClass}>Что-то пошло не так...</span>
+        <button 
+          type="submit" 
+          className="auth-page__button"
+        >{buttonText}</button>
     </form>
     <div className='auth-page__suggestion'>
       <p className='auth-page__question'>{suggestionText}</p>

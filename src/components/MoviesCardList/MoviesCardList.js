@@ -2,7 +2,7 @@ import React from 'react';
 import './MoviesCardList.css'
 import MoviesCard from '../MoviesCard/MoviesCard';
 
-const MoviesCardList = ({ films }) => {
+const MoviesCardList = ({ films, isSavedCards }) => {
   return (
     <div className='card-container'>
       <div className='card-container__list'>
@@ -12,6 +12,7 @@ const MoviesCardList = ({ films }) => {
             title={film.title} 
             duration={film.duration} 
             imagePath={film.imagePath} 
+            isSavedCards={isSavedCards}
           />
         ))}
       </div>

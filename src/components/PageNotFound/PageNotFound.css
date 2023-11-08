@@ -39,3 +39,19 @@
   font-weight: 400;
   line-height: normal;
 }
+
+@media screen and (max-width: 450px) {
+  .page-not-found__number {
+    margin: 330px auto 0;
+  
+    font-size: 80px;
+  }
+  .page-not-found__text {
+    margin: 8px auto 0;
+    font-size: 12px;
+  }
+  .page-not-found__link {
+    margin: 284px auto 30px;
+  }
+  
+}

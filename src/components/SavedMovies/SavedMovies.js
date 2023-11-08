@@ -14,7 +14,7 @@ const SavedMovies = () => {
   return (
     <div>
       <SearchForm handleSubmit={handleSubmit}/>
-      <MoviesCardList films={savedFilms} />
+      <MoviesCardList films={savedFilms} isSavedCards={true} />
     </div>
   )
 }

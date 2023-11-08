@@ -112,14 +112,45 @@
   .header__navigation {
     display: none;
   }
-  .header__sign-buttons {
+  /* .header__sign-buttons {
     display: none;
-  }
+  } */
   .header__account-button {
     display: none;
   }
   .header__logo {
     left: 30px;
   }
+  .header__sign-buttons {
+    right: 30px;
+  }
+  .header__sign-button {
+    padding: 8px 20px;
+    margin-right: 10px;
+  }
+  .header__sign-button_type_signin {
+    padding: 8px 20px;
+    margin: 0;
+  }
 }
 
+@media screen and (max-width: 450px) {
+  .header__sign-button {
+    padding: 5px 12px;
+    font-size: 10px;
+    line-height: 16px; 
+  }
+  .header__logo {
+    left: 15px;
+  }
+  .header__sign-buttons {
+    right: 15px;
+  }
+  .header__navigation-button {
+    right: 15px;
+    top: 19px;
+    width: 38px;
+    height: 38px;
+    background-size: cover;
+  }
+}

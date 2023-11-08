@@ -28,6 +28,15 @@
   margin: 0;
 }
 
+@media screen and (max-width: 768px) {
+  .navtab {
+    margin: 0 auto 7px;
+  }
+  .navtab__link {
+    margin-right: 6px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .navtab__link {
     height: 26px;

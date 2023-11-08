@@ -21,23 +21,12 @@ const Navigation = ({ isOpen, handleCloseClick }) => {
       
       <div className='navigation__background'></div>
       <nav className='navigation__bar'>
-      <button 
-        style={{position: 'absolute'}}
-        onClick={() => setIsLoggedIn(!isLoggedIn)}  
-      >sth</button>
         <NavLink to="/" className={({ isActive }) => checkIsActive(isActive)}>Главная</NavLink>
         <NavLink to="/movies" className={({ isActive }) => checkIsActive(isActive)}>Фильмы</NavLink>
         <NavLink to="/saved-movies" className={({ isActive }) => checkIsActive(isActive)}>Сохранённые фильмы</NavLink>
-        {
-          isLoggedIn 
-          ? <NavLink to="/profile" className="navigation__account-button">Аккаунт</NavLink>
-          : (
-            <div className='navigation__sign-buttons'>
-              <NavLink to="/signup" className="navigation__sign-button">Регистрация</NavLink>
-              <NavLink to="/signin" className="navigation__sign-button header__sign-button_type_signin">Войти</NavLink>
-            </div>
-          )
-        }
+       
+          <NavLink to="/profile" className="navigation__account-button">Аккаунт</NavLink>
+          
       </nav>
       <button 
         onClick={handleCloseClick}

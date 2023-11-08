@@ -13,7 +13,7 @@ const Movies = () => {
   return (
     <div className='movies'>
       <SearchForm handleSubmit={handleSubmit}/>
-      <MoviesCardList films={films}/>
+      <MoviesCardList films={films} isSavedCards={false} />
       <button className='movies__button'>Ещё</button>
     </div>
   )

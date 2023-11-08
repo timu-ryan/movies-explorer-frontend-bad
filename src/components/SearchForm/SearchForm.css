@@ -85,11 +85,25 @@
   .search-form {
     margin: 80px 30px 0;
   }
+  .search-form__input-area {
+    margin: 0 0 40px;
+  }
 }
 
 
 @media screen and (max-width: 450px) {
   .search-form {
     margin: 80px 14px 0;
+  }
+  .search-form__input-area {
+    margin: 0 0 46px;
+  }
+  .search-form__input {
+    height: 44px;
+    padding-left: 13px;
+    font-size: 14px;  
+  }
+  .search-form__checkbox-description {
+    font-size: 11px;
   }
 }

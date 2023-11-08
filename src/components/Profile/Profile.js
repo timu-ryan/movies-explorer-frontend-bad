@@ -13,6 +13,14 @@ const Profile = ({ handleSubmit }) => {
     setEmailValue(e.target.value)
   }
 
+  function handleEditClick(e) {
+    e.preventDefault();
+  }
+
+  function handleExitClick(e) {
+    e.preventDefault();
+  }
+
   return (
     <div className='profile'>
       <h2 className='profile__title'>Привет, {nameValue}!</h2>
@@ -49,8 +57,16 @@ const Profile = ({ handleSubmit }) => {
           />
           <span className="profile-input-error"></span>
         </label>
-        <button type="submit" className="profile__button">Редактировать</button>
-        <button type="submit" className="profile__button profile__button_type_exit">Выйти из аккаунта</button>
+        <button 
+          type="submit"
+          className="profile__button"
+          onClick={handleEditClick}
+        >Редактировать</button>
+        <button 
+          type="submit" 
+          className="profile__button profile__button_type_exit"
+          onClick={handleExitClick}
+        >Выйти из аккаунта</button>
     </form>
     </div>
   )
