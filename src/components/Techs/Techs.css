@@ -34,7 +34,7 @@
 
 .techs__text {
   margin: 0 auto 100px;
-  width: 460px;
+  max-width: 460px;
   color: #FFF;
 
   text-align: center;
@@ -55,7 +55,7 @@
 .techs__technology {
   width: 90px;
   height: 60px;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
 
   border-radius: 10px;
   background: #303030;
@@ -77,3 +77,13 @@
 .techs__technology:last-child {
   margin: 0;
 }
+
+
+@media screen and (max-width: 760px) {
+  .techs__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+

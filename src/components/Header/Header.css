@@ -10,9 +10,7 @@
 .header__logo {
   height: 38px;
   width: 38px;
-
-  background-image: url("../../images/logo.svg");
-
+  
   position: absolute;
   left: 70px;
 }
@@ -62,3 +60,66 @@
   font-weight: 500;
   line-height: 16px;
 }
+
+.header__sign-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  right: 70px;
+}
+
+.header__sign-button {
+  padding: 8px 20px;
+
+  text-decoration: none;
+  color: #FFF;
+  text-align: right;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px; /* 133.333% */
+}
+
+.header__sign-button_type_signin {
+  border-radius: 3px;
+  background: #3DDC84;
+
+  color: #000;
+}
+
+.header__navigation-button {
+  position: absolute;
+  right: 30px;
+  top: 15px;
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  background-image: url(../../images/navigation.svg);
+
+  background-color: #202020;
+  border: none;
+}
+
+@media screen and (max-width: 920px) {
+  .header__navigation-button {
+    display: block;
+  }
+  .header__navigation {
+    display: none;
+  }
+  .header__sign-buttons {
+    display: none;
+  }
+  .header__account-button {
+    display: none;
+  }
+  .header__logo {
+    left: 30px;
+  }
+}
+

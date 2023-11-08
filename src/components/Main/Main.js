@@ -12,10 +12,9 @@ const Main = () => {
     <div>
       <Promo />
       {/* <NavTab /> */}
-      <AboutProject id='about-project' />
-      <Techs id='techs' />
-      <AboutMe id='about-me' />
-      <Portfolio />
+      <AboutProject />
+      <Techs />
+      <AboutMe />
     </div>
   )
 }

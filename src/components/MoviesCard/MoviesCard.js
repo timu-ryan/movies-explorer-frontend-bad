@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import './MoviesCard.css'
 
-const MoviesCard = () => {
+const MoviesCard = ({title, duration, imagePath}) => {
   return (
-    <div>MoviesCard</div>
+    <div className='card'>
+      <img alt={title} src={imagePath} className='card__image'/>
+      <div className='card__text'>
+        <h3 className='card__title'>{title}</h3>
+        <p className='card__duration'>{duration}</p>
+      </div>
+    </div>
   )
 }
 

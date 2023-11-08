@@ -1,8 +1,21 @@
 import React from 'react'
+import SearchForm from '../SearchForm/SearchForm';
+import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import films from '../../utils/films'
+import './Movies.css'
 
 const Movies = () => {
+
+  function handleSubmit(evt) {
+    evt.preventDefault();
+  }
+
   return (
-    <div>Movies</div>
+    <div className='movies'>
+      <SearchForm handleSubmit={handleSubmit}/>
+      <MoviesCardList films={films}/>
+      <button className='movies__button'>Ещё</button>
+    </div>
   )
 }
 

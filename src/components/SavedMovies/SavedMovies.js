@@ -1,8 +1,21 @@
-import React from 'react'
+import React from 'react';
+import SearchForm from '../SearchForm/SearchForm';
+import MoviesCardList from '../MoviesCardList/MoviesCardList';
+import films from '../../utils/films'
 
 const SavedMovies = () => {
+
+  function handleSubmit(evt) {
+    evt.preventDefault();
+  }
+
+  const savedFilms = films.slice(0, 3)
+  
   return (
-    <div>SavedMovies</div>
+    <div>
+      <SearchForm handleSubmit={handleSubmit}/>
+      <MoviesCardList films={savedFilms} />
+    </div>
   )
 }
 
